@@ -1,0 +1,158 @@
+Telemetry Viewer File Format v0.4
+
+Grid Settings:
+
+	column count = 8
+	row count = 8
+
+Serial Port Settings:
+
+	port = COM7
+	baud = 115200
+	packet type = ASCII CSVs
+	sample rate = 10000
+
+7 Data Structure Locations:
+
+	location = 0
+	processor index = -1
+	name = Temperature
+	color = 0xFF0000
+	unit = %H
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 1
+	processor index = -1
+	name = Humidity
+	color = 0xCC0000
+	unit = %H
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 2
+	processor index = -1
+	name = Pressure
+	color = 0x0033FF
+	unit = HPa
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 3
+	processor index = -1
+	name = Altitude
+	color = 0x006666
+	unit = m
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 4
+	processor index = -1
+	name = Accelerometer_x
+	color = 0x0000FF
+	unit = G
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 5
+	processor index = -1
+	name = Accelerometer_y
+	color = 0xFF0000
+	unit = G
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 6
+	processor index = -1
+	name = Accelerometer_z
+	color = 0x00FF00
+	unit = G
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+5 Charts:
+
+	chart type = Time Domain Chart
+	top left x = 0
+	top left y = 0
+	bottom right x = 2
+	bottom right y = 2
+	datasets = 0
+	sample count = 20
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = false
+	show x-axis scale = false
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Time Domain Chart
+	top left x = 3
+	top left y = 0
+	bottom right x = 5
+	bottom right y = 2
+	datasets = 3
+	sample count = 20
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = false
+	show x-axis scale = false
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Time Domain Chart
+	top left x = 0
+	top left y = 3
+	bottom right x = 2
+	bottom right y = 4
+	datasets = 2
+	sample count = 20
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = false
+	show x-axis scale = false
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Time Domain Chart
+	top left x = 3
+	top left y = 3
+	bottom right x = 5
+	bottom right y = 4
+	datasets = 1
+	sample count = 20
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = false
+	show x-axis scale = false
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Time Domain Chart
+	top left x = 0
+	top left y = 5
+	bottom right x = 5
+	bottom right y = 7
+	datasets = 4,5,6
+	sample count = 30
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = false
+	show x-axis scale = false
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
